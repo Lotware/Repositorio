@@ -13,10 +13,10 @@ RUN npm install
 # RUN npm ci --only=production
 
 # Bundle app source
-COPY . .
+COPY server.js ./
 
 # Bind your app to port 8080
-EXPOSE 8080
+EXPOSE 3000
 
 # CMD [ "node", "server.js" ]
-CMD [ "node", "server_solution.js" ]
+CMD [ "node", "server.js" ]
